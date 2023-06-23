@@ -6,6 +6,5 @@
     ".storybook/**/*.ts",
     ".storybook/**/*.tsx"
   ],
-  "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": ["node_modules"]
 }

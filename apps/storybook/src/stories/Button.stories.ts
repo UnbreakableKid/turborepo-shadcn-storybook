@@ -8,7 +8,9 @@ const meta = {
   component: Button,
   tags: ["autodocs"],
   argTypes: {
+    children: { control: "text", defaultValue: "Button" },
     variant: { control: "select" },
+    onClick: { action: "clicked", type: "function" },
   },
 } satisfies Meta<typeof Button>;
 
@@ -19,5 +21,6 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: "default",
+    children: "Button",
   },
 };

@@ -1,6 +1,10 @@
 import type { Preview } from "@storybook/react";
 import "ui/styles/globals.css";
 
+import { withThemeByClassName } from "@storybook/addon-styling";
+
+/* TODO: update import to your tailwind styles file */
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -11,6 +15,18 @@ const preview: Preview = {
       },
     },
   },
+
+  decorators: [
+    // Adds theme switching support.
+    // NOTE: requires setting "darkMode" to "class" in your tailwind config
+    withThemeByClassName({
+      themes: {
+        light: "light",
+        dark: "dark",
+      },
+      defaultTheme: "light",
+    }),
+  ],
 };
 
 export default preview;

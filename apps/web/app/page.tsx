@@ -2,9 +2,11 @@ import { Button } from "ui";
 
 export default function Page() {
   return (
-    <>
-      <h1 className="text-red-700">Eu sou o Buy from Portugal</h1>
-      <Button>bla</Button>
-    </>
+    <div className="container flex flex-col gap-5">
+      <h1 className="text-red-700">App</h1>
+      <div>
+        <Button>Hello</Button>
+      </div>
+    </div>
   );
 }

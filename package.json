@@ -5,6 +5,10 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter ui --filter web",
+    "dev:docs": "turbo run dev --filter ui --filter docs",
+    "dev:both": "turbo run dev --filter ui --filter doca --filter web",
+    "dev:ui": "turbo run dev --filter ui --filter storybook",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "ui:add": "pnpm --filter ui ui:add"

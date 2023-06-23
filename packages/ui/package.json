@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "ui:add": "pnpm dlx shadcn-ui add"
+    "ui:add": "pnpm dlx shadcn-ui@latest add"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
@@ -25,6 +25,7 @@
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
     "lucide-react": "^0.248.0",
+    "next-themes": "^0.2.1",
     "tailwind-merge": "^1.13.2",
     "tailwindcss-animate": "^1.0.6"
   }

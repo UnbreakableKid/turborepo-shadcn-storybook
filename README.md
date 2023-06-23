@@ -1,14 +1,10 @@
-# Turborepo starter
+# Turborepo + NextJS + Shadcn + Storybook starter
 
-This is an official starter Turborepo.
+This is a starter template for [Turborepo](https://turbo.build/repo) with [Next.js](https://nextjs.org/), [Shadcn/ui](https://ui.shadcn.com/) and [Storybook](https://storybook.js.org/).
 
-## Using this example
+It is very minimal and includes only the essentials needed to get started. I've created this template to help me get started with my projects faster.
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+If you wish for a version without Storybook, please check out [turborepo-shadcn-ui](https://github.com/dan5py/turborepo-shadcn-ui) by dan5py.
 
 ## What's inside?
 
@@ -18,7 +14,7 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
+- `ui`: a ui library using shadcn-ui
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
@@ -50,6 +46,15 @@ cd my-turborepo
 pnpm dev
 ```
 
+I've also included various scripts to help you develop your apps and packages:
+
+- `dev:docs`: develop the `docs` app
+- `dev:web`: develop the `web` app
+- `dev:both`: develop both the `docs` and `web` apps
+- `dev:ui`: develop the `ui` package with Storybook
+
+There's probably a better way to do this, but I haven't figured it out yet. If you know how to do this, please let me know.
+
 ### Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
@@ -69,13 +74,10 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 npx turbo link
 ```
 
-## Useful Links
+## Special Thanks
 
-Learn more about the power of Turborepo:
+Special thanks to [shacn/ui](https://ui.shadcn.com/) for creating this amazing UI library.
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+## Contribute
+
+If you have any suggestions or improvements, please feel free to open an issue or a pull request.
