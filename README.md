@@ -1,6 +1,9 @@
 # Turborepo + NextJS + Shadcn + Storybook starter
 
-This is a starter template for [Turborepo](https://turbo.build/repo) with [Next.js](https://nextjs.org/), [Shadcn/ui](https://ui.shadcn.com/) and [Storybook](https://storybook.js.org/).
+This is a starter template for [Turborepo](https://turbo.build/repo) with [Next.js](https://nextjs.org/), [Shadcn/ui](https://ui.shadcn.com/) and [Storybook](https://storybook.js.org/) already setup.
+
+> **Note**
+> This example uses `pnpm` as package manager.
 
 It is very minimal and includes only the essentials needed to get started. I've created this template to help me get started with my projects faster.
 
@@ -28,6 +31,14 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
+### Install
+
+To get started, go to the root and run the following command:
+
+```
+pnpm install
+```
+
 ### Build
 
 To build all apps and packages, run the following command:
@@ -52,6 +63,7 @@ I've also included various scripts to help you develop your apps and packages:
 - `dev:web`: develop the `web` app
 - `dev:both`: develop both the `docs` and `web` apps
 - `dev:ui`: develop the `ui` package with Storybook
+- `ui:add`: add a new component to the `ui` package using the shadcn-ui CLI.
 
 There's probably a better way to do this, but I haven't figured it out yet. If you know how to do this, please let me know.
 
